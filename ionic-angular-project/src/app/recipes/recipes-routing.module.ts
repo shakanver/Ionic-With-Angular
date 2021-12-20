@@ -9,8 +9,8 @@ const routes: Routes = [
     component: RecipesPage
   },
   {
-    //using a colon makes recipeId act as a variable name/alias
-    path: ':recipeId',
+    //using a colon allows us to enter parameters
+    path: ':recipe_Id',
     loadChildren: () => import('./recipes-detail/recipes-detail.module').then( m => m.RecipesDetailPageModule)
   }
 
