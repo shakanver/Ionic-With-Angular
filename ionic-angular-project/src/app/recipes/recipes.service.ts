@@ -41,4 +41,15 @@ export class RecipesService {
     });
   }
 
+  delete_recipe(recipe_id: string) {
+    /* 
+    filter takes in a function which executes for each element in the list. If the function
+    returns false for an element, it deletes that element of the list. Note: filter will return a 
+    new list and not edit the original.
+     */
+    this.recipes = this.recipes.filter(recipe => {
+      return recipe.id !== recipe_id;
+    });
+  }
+
 }
