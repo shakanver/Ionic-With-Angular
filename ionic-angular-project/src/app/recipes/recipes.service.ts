@@ -47,6 +47,7 @@ export class RecipesService {
     returns false for an element, it deletes that element of the list. Note: filter will return a 
     new list and not edit the original.
      */
+
     this.recipes = this.recipes.filter(recipe => {
       return recipe.id !== recipe_id;
     });
