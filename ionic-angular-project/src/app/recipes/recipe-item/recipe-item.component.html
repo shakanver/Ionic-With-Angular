@@ -1,0 +1,7 @@
+    <!--the square bracket on routerLink makes it dynamic since we have different recipe id's-->
+    <ion-item  [routerLink]="['./',recipe_item.id]">
+      <ion-avatar slot="start">
+        <ion-img [src]="recipe_item.imageUrl"></ion-img>
+      </ion-avatar>
+      <ion-label>{{recipe_item.title}}</ion-label>
+    </ion-item>
