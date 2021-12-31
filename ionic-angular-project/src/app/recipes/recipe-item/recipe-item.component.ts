@@ -8,7 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
   /*The @Input() makes this attribute bindable externally.
-    This is the equivalent of a react prop.
+    This is the equivalent of a react prop
+    daslafjksdalf
   */
   @Input() recipe_item: Recipe;
 
